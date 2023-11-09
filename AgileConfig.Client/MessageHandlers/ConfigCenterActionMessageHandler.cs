@@ -1,8 +1,5 @@
 ﻿using AgileConfig.Protocol;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AgileConfig.Client.MessageHandlers

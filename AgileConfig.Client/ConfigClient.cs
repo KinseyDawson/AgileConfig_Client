@@ -387,12 +387,10 @@ namespace AgileConfig.Client
             this.Status = ConnectStatus.Connecting;
             var clientName = string.IsNullOrEmpty(Name) ? "" : HttpUtility.UrlEncode(Name);
             var tag = string.IsNullOrEmpty(Tag) ? "" : HttpUtility.UrlEncode(Tag);
-
             client.Options.SetRequestHeader("appid", HttpUtility.UrlEncode(AppId));
             client.Options.SetRequestHeader("env", Env);
             client.Options.SetRequestHeader("Authorization", GenerateBasicAuthorization(AppId, Secret));
             client.Options.SetRequestHeader("client-v", AssemblyUtil.GetVer());
-
             var randomServer = new RandomServers(ServerNodes);
             int failCount = 0;
             while (!randomServer.IsComplete)

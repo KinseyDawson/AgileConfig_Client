@@ -1,7 +1,5 @@
 ﻿using AgileConfig.Client;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using System;
 
 namespace Microsoft.AspNetCore.Hosting
 {

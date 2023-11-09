@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AgileConfig.Client.RegisterCenter;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AgileConfig.Client.RegisterCenter.Tests
 {

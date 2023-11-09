@@ -1,13 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Agile.Config.Client;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using AgileConfig.Client;
 using AgileConfig.Protocol;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Linq;
 
 namespace Agile.Config.Client.Tests
 {

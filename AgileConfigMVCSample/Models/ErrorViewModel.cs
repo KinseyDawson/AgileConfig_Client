@@ -1,5 +1,3 @@
-using System;
-
 namespace AgileConfigMVCSample.Models
 {
     public class ErrorViewModel

@@ -1,7 +1,6 @@
 using AgileConfigMVCSampleNET6;
 using NLog.Extensions.Logging;
 using NLog.Web;
-using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 

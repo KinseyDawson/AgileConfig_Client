@@ -1,8 +1,6 @@
 ﻿using AgileConfig.Client.RegisterCenter.Heartbeats;
-using AgileConfig.Protocol;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
