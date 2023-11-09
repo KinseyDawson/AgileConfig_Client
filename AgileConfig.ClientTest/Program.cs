@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using AgileConfig.Client;
 using AgileConfig.Client.RegisterCenter;
-using System.Threading;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
-namespace AgileConfigClientTest
+namespace AgileConfig.ClientTest
 {
     class Program
     {
@@ -18,7 +18,6 @@ namespace AgileConfigClientTest
             var serviceProvider = serviceCollection.BuildServiceProvider();
             var client = new ConfigClient();
             var lf = serviceProvider.GetService<ILoggerFactory>();
-
             Task.Run(async () =>
             {
                 try
@@ -69,7 +68,6 @@ namespace AgileConfigClientTest
         {
             var oldConfigs = obj.OldConfigs;
             var newConfigs = obj.NewConfigs;
-
             foreach (var item in newConfigs)
             {
                 Console.WriteLine($"new {item.Key}={item.Value}");
